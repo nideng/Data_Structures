@@ -82,6 +82,7 @@ public:
 		return current->data;
 	}
 	ListNode<T>*& getNextNode() { return current->next; }
+	ListNode<T>*& getNode(){return current;}
 private:
 	LinkListItr(ListNode<T>* theNode)
 		:current(theNode) {}
